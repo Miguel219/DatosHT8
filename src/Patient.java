@@ -1,4 +1,8 @@
-
+/**
+ * Lab8
+ * Silvio Orozco 18282
+ * Jose Castaneda 18161
+ */
 public class Patient implements Comparable<Patient>{
 
 	private String name;

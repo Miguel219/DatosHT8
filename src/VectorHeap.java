@@ -1,5 +1,9 @@
 import java.util.Vector;
-
+/**
+ * Lab8
+ * Silvio Orozco 18282
+ * Jose Castaneda 18161
+ */
 public class VectorHeap<E extends Comparable<E>> implements interfacePriorityQueue<E>
 {
 

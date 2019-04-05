@@ -1,3 +1,8 @@
+/**
+ * Lab8
+ * Silvio Orozco 18282
+ * Jose Castaneda 18161
+ */
 public interface interfacePriorityQueue<E extends Comparable<E>>
 {
 	public E getFirst();

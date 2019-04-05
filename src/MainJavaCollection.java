@@ -12,9 +12,11 @@ import java.util.stream.Stream;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
-/*Silvio Orozco 18282
- * Jose Castañeda 18161
- * Hoja de Trabajo 8*/
+/**
+ * Lab8
+ * Silvio Orozco 18282
+ * Jose Castaneda 18161
+ */
 //Main utilizando JavaCollection PriorityQueue
 
 public class MainJavaCollection {
