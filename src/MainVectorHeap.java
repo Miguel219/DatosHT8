@@ -28,7 +28,7 @@ public class MainVectorHeap {
 		int menu = 0;
 		
 		//Bienvenida al programa de hospital para pacientes
-		System.out.println("Bienvenidos al programa del Hospital para atención de Pacientes.");
+		System.out.println("Bienvenidos al programa del Hospital para atención de Pacientes utilizando Vector Heap.");
 		VectorHeap<Patient> Patients = new VectorHeap<Patient>();
 		
 		//Se lee el archivo txt con las palabras traducidas que tendra el diccionario

@@ -1,4 +1,4 @@
-public interface PriorityQueue<E extends Comparable<E>>
+public interface interfacePriorityQueue<E extends Comparable<E>>
 {
 	public E getFirst();
 	// pre: !isEmpty()

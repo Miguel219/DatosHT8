@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
@@ -14,7 +15,7 @@ import javafx.scene.control.Alert.AlertType;
 /*Silvio Orozco 18282
  * Jose Castañeda 18161
  * Hoja de Trabajo 8*/
-//Main utilizando VectorHeap
+//Main utilizando JavaCollection PriorityQueue
 
 public class MainJavaCollection {
 
@@ -28,8 +29,8 @@ public class MainJavaCollection {
 		int menu = 0;
 		
 		//Bienvenida al programa de hospital para pacientes
-		System.out.println("Bienvenidos al programa del Hospital para atención de Pacientes.");
-		VectorHeap<Patient> Patients = new VectorHeap<Patient>();
+		System.out.println("Bienvenidos al programa del Hospital para atención de Pacientes utilizando Java Collections.");
+		 PriorityQueue<Patient> Patients =  new PriorityQueue<Patient>(); 
 		
 		//Se lee el archivo txt con las palabras traducidas que tendra el diccionario
 		boolean errorOnFile=false;
@@ -114,7 +115,7 @@ public class MainJavaCollection {
 			if(menu==2) {
 				Patient nextPatient;
 				if(!Patients.isEmpty()) {
-					nextPatient = Patients.getFirst();
+					nextPatient = Patients.peek();
 					System.out.println("El siguiente paciente para atender es : ");
 					System.out.println("\t Nombre: "+nextPatient.getName());
 					System.out.println("\t Enfermedad: "+nextPatient.getSymptom());
