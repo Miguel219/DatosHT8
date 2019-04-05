@@ -16,6 +16,24 @@ public class MyTests {
     @Test
     public void VectorHeapTester() {
     	//Prueba del vector heap y clase patient
+    	VectorHeap<Patient> Patients = new VectorHeap<Patient>();
+    	//Creacion de pacientes
+    	Patient patientA = new Patient("Jorge","Apendicitis","A");
+    	Patient patientB = new Patient("Andres","Operacion","B");
+    	Patient patientC = new Patient("Gustavo","Zika","C");
+    	Patient patientCC = new Patient("Jose","VIH","C");
+    	Patient patientD = new Patient("Estuardo","Intoxicacion","D");
+    	Patient patientE = new Patient("Antonio","Gripe","E");
+    	//Prueba Junit
+    	assertEquals(true,Patients.isEmpty(), "Respuesta true esta vacio");
+    	//Añadir pacientes a vectorheap en desorden
+    	Patients.add(patientC);
+    	Patients.add(patientD);
+    	Patients.add(patientA);
+    	Patients.add(patientCC);
+    	Patients.add(patientB);
+    	Patients.add(patientE);
+    	
     	
     }
 
