@@ -14,15 +14,9 @@ import org.junit.jupiter.api.Test;
 public class MyTests {
 
     @Test
-    public void DecodificatorTester() {
-    	//Decodificador MiDecodificador = new Decodificador();
-    	//String line =("(DEFUN sumaCon10 (num)"
-    		//	+ " (+ 10 num))");    			
-    	//ArrayList<String> result = new ArrayList<String>();
-    	//MiDecodificador.add(line);
-    	//line="(sumaCon10 50)";
-    	//result= MiDecodificador.add(line);
-    	//assertEquals("60", result.get(0), "Deberia de dar 100 porque le caemos bien a Diego");
+    public void VectorHeapTester() {
+    	//Prueba del vector heap y clase patient
+    	
     }
 
 	

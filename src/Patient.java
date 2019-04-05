@@ -1,11 +1,11 @@
 
-public class Pacientes implements Comparable<Pacientes>{
+public class Patient implements Comparable<Patient>{
 
 	private String name;
 	private String symptom;
 	private String emergencyCode;
 	
-	public Pacientes() {
+	public Patient() {
 		// TODO Auto-generated constructor stub
 		name = "";
 		symptom = "";
@@ -17,7 +17,7 @@ public class Pacientes implements Comparable<Pacientes>{
 	 * @param symptom = sintoma del paciente
 	 * @param emergencyCode = prioridad
 	 */
-	public Pacientes(String name, String symptom, String emergencyCode) {
+	public Patient(String name, String symptom, String emergencyCode) {
 		super();
 		this.name = name;
 		this.symptom = symptom;
@@ -66,35 +66,21 @@ public class Pacientes implements Comparable<Pacientes>{
 		this.emergencyCode = emergencyCode;
 	}
 
-	public int getPatientPriority() {
-		String currentEmergencyCode = this.getEmergencyCode();
-		int priority = 0;
-		if(currentEmergencyCode.equals("A"))
-			priority = 1;
-		else if(currentEmergencyCode.equals("B"))
-			priority = 2;
-		else if(currentEmergencyCode.equals("C"))
-			priority = 3;
-		else if(currentEmergencyCode.equals("D"))
-			priority = 4;
-		else if(currentEmergencyCode.equals("E"))
-			priority = 5;
-		return priority;
+	public String getPatientPriority() {
+		
+		
+		return this.getEmergencyCode();
 	}
 	
 	@Override
-	public int compareTo(Pacientes o) {
+	public int compareTo(Patient o) {
 		// TODO Auto-generated method stub
-		int result = 0;
-		if(this.getPatientPriority()<o.getPatientPriority())
-			result = 1;
-		else if(this.getPatientPriority()>o.getPatientPriority())
-			result = -1;
-		else
-			result = 0;
+		int result = this.getEmergencyCode().compareTo(o.getEmergencyCode());
 		
 		return result;
 	}
+
+	
 
 	
 }
